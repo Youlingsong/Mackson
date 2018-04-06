@@ -9,6 +9,12 @@
         <relativePath>../taotao_parent/pom.xml</relativePath>
     </parent>
     <packaging>pom</packaging>
+    <modules>
+        <module>../taotao_manage_pojo</module>
+        <module>../taotao_manage_mapper</module>
+        <module>../taotao_manage_service</module>
+        <module>../taotao_manage_web</module>
+    </modules>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.taotao.manage</groupId>
