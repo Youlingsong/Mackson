@@ -11,4 +11,5 @@ public class ItemCatServiceImpl extends BaseService<ItemCat> {
     @Autowired
     public ItemCatMapper itemCatMapper;
 
+
 }

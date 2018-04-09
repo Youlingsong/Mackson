@@ -9,7 +9,10 @@
 	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
 
     <!--加载jdbc.properties-->
-<context:property-placeholder location="classpath:jdbc.properties"></context:property-placeholder>
+    <!--加载的env.properties,我们通过@value在controller层属于sprngMvc注入（属于子容器）,而applicationContext属于在Spring（父容器，所以要做些操作）-->
+<context:property-placeholder location="classpath:*.properties"></context:property-placeholder>
+
+
 
     <!-- 扫描包 -->
     <context:component-scan base-package="com.taotao"/>

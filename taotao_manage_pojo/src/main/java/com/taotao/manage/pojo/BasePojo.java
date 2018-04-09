@@ -18,7 +18,4 @@ public abstract class BasePojo {
     public void setUpdated(Date updated) {
         this.updated = updated;
     }
-    
-    
-
 }
